@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Requestnet.Infrastructure
+namespace Requestnet.Core.Domain
 {
     public partial class Marca
     {

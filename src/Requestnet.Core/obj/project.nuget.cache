@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ApDheITDxmIFnU48Y1L+WLPsp84P8f0AhrZK8zKiP04zHvgL8gBz/oT0Ry0XtfnMkEJC/1D8QOjwKEIAd20rDA==",
+  "dgSpecHash": "VicaXKmiZLNjBNCQqwOlTvlPkpSlsXagFb9jYG4q0a9cR2Hcg4/qpfzGY4lFT/mhnHP9UuF1s0EI6xZFdK3h1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mi Amorsh\\Requestnet\\src\\Requestnet.Core\\Requestnet.Core.csproj",
+  "projectFilePath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mi Amorsh\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Mi Amorsh\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

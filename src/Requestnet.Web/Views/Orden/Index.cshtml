@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Requestnet.Core.Domain.Orden>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdjuntarArchivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaAprobacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Solucion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaSolucion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEstadoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdJefeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdLiderNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTipoOrdenNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdjuntarArchivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaAprobacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Solucion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaSolucion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEstadoNavigation.IdEstado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdJefeNavigation.IdJefe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdLiderNavigation.IdLider)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProveedorNavigation.IdProveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTipoOrdenNavigation.IdTipoOrden)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdOrden">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdOrden">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdOrden">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

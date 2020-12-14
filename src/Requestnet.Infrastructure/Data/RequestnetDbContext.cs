@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Requestnet.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore;
+using Requestnet.Core.Domain;
 
 namespace Requestnet.Infrastructure.Data
 {

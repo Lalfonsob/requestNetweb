@@ -6175,11 +6175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mi Amorsh\\Requestnet\\src\\Requestnet.Core\\Requestnet.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj",
       "projectName": "Requestnet.Core",
-      "projectPath": "C:\\Users\\Mi Amorsh\\Requestnet\\src\\Requestnet.Core\\Requestnet.Core.csproj",
+      "projectPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj",
       "packagesPath": "C:\\Users\\Mi Amorsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mi Amorsh\\Requestnet\\src\\Requestnet.Core\\obj\\",
+      "outputPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mi Amorsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
