@@ -15,6 +15,9 @@ h1 {
 a {
   color: #0366d6;
 }
+a:hover {
+    text-decoration: none;
+}
 
 .btn-primary {
   color: #fff;
@@ -64,8 +67,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    background: #243672;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .footer {
@@ -75,7 +77,6 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-
 
 .inicio {
     display: block;
@@ -106,7 +107,6 @@ ul {
 
 ul li {
     display: inline-block;
-    margin: 0 10px;
 }
 
 ul li a {
@@ -118,11 +118,11 @@ ul li a {
     text-decoration: none;
 }
 
-    ul li a:hover,
-    ul li a.active {
-        background: #252c35;
-        color: #00AAFF;
-    }
+ul li a:hover,
+ul li a.active {
+    background: #252c35;
+    color: #00AAFF;
+}
 .inicio img {
     margin: 50px;
 }
@@ -130,4 +130,57 @@ ul li a {
 
 table {
     background: #fff;
+}
+
+#sidebar-nav, #wrapper .main {
+    padding-top: 0;
+}
+.sidebar {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 220px;
+    height: 100%;
+    float: left;
+    background-color: #243672;
+    position: fixed;
+    left: 0;
+}
+.sidebar .nav > li {
+    width: 100%;
+}
+.sidebar .nav > li > a {
+    border-left: 5px solid transparent;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 18px 30px;
+}
+.sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+    background-color: #252c35;
+    border-left-color: #00AAFF;
+    color: #00AAFF;
+}
+
+.main {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: calc(100% - 220px);
+    left: 0;
+    position: relative;
+    float: right;
+    background-color: #f5f5fa;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
 }
