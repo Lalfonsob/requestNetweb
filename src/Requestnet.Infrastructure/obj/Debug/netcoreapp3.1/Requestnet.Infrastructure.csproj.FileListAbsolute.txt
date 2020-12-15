@@ -1,30 +1,45 @@
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.deps.json
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.runtimeconfig.json
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.runtimeconfig.dev.json
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.dll
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.pdb
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Core.dll
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Core.pdb
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csprojAssemblyReference.cache
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.AssemblyInfo.cs
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csproj.CopyComplete
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.dll
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.pdb
-C:\Users\Mi Amorsh\Requestnet\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.genruntimeconfig.cache
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csprojAssemblyReference.cache
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.AssemblyInfo.cs
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.dll
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.pdb
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.deps.json
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.runtimeconfig.json
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.runtimeconfig.dev.json
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.dll
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Infrastructure.pdb
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Core.dll
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\bin\Debug\netcoreapp3.1\Requestnet.Core.pdb
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.csproj.CopyComplete
-C:\Users\Mi Amorsh\requestNetweb\src\Requestnet.Infrastructure\obj\Debug\netcoreapp3.1\Requestnet.Infrastructure.genruntimeconfig.cache
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.deps.json
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.json
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.dev.json
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.dll
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.pdb
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csprojAssemblyReference.cache
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfo.cs
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CopyComplete
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+C:/Users/Mi Amorsh/Requestnet/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.genruntimeconfig.cache
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csprojAssemblyReference.cache
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfo.cs
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.deps.json
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.json
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.dev.json
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.dll
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.pdb
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CopyComplete
+C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.genruntimeconfig.cache
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.deps.json
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.json
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.runtimeconfig.dev.json
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.dll
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/bin/Debug/netcoreapp3.1/Requestnet.Core.pdb
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csprojAssemblyReference.cache
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfoInputs.cache
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.AssemblyInfo.cs
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.csproj.CopyComplete
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.dll
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.pdb
+/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/obj/Debug/netcoreapp3.1/Requestnet.Infrastructure.genruntimeconfig.cache

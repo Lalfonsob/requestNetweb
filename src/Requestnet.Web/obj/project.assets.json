@@ -10688,36 +10688,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mi Amorsh\\.nuget\\packages\\": {}
+    "/Users/miguelbaron/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Web\\Requestnet.Web.csproj",
+      "projectUniqueName": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Web/Requestnet.Web.csproj",
       "projectName": "Requestnet.Web",
-      "projectPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Web\\Requestnet.Web.csproj",
-      "packagesPath": "C:\\Users\\Mi Amorsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Web\\obj\\",
+      "projectPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Web/Requestnet.Web.csproj",
+      "packagesPath": "/Users/miguelbaron/.nuget/packages/",
+      "outputPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Web/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mi Amorsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/miguelbaron/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj": {
-              "projectPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj"
+            "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/Requestnet.Core.csproj": {
+              "projectPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/Requestnet.Core.csproj"
             },
-            "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Infrastructure\\Requestnet.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Mi Amorsh\\requestNetweb\\src\\Requestnet.Infrastructure\\Requestnet.Infrastructure.csproj"
+            "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/Requestnet.Infrastructure.csproj": {
+              "projectPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Infrastructure/Requestnet.Infrastructure.csproj"
             }
           }
         }
@@ -10730,6 +10733,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
@@ -10798,7 +10802,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
       }
     }
   }

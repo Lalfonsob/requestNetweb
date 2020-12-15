@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{E65726CF-C062-41B8-8CA1-79C35B6CCB89}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Requestnet.Web/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="src/Requestnet.Web/Controllers/CasoController.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="src/Requestnet.Web/Views/Home/Index.cshtml" Line="10" Column="13" />
+      <File FileName="src/Requestnet.Web/wwwroot/css/site.css" Line="70" Column="1" />
+      <File FileName="src/Requestnet.Web/Views/Shared/_Layout.cshtml" Line="23" Column="118" />
+      <File FileName="src/Requestnet.Web/Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Requestnet" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Requestnet.Web" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Areas" expanded="True">
+                  <Node name="Identity" expanded="True">
+                    <Node name="Pages" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Models" expanded="True" />
+                <Node name="Properties" expanded="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="Home" expanded="True" />
+                  <Node name="Shared" expanded="True">
+                    <Node name="_Layout.cshtml" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="wwwroot" expanded="True">
+                  <Node name="css" expanded="True" />
+                  <Node name="images" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Requestnet.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

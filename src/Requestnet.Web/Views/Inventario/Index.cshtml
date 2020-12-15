@@ -4,12 +4,23 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+
+<img src="/images/logoWhiteRN.png" />
+
+
+<ul style="text-align:center">
+    <li><a href="https://localhost:5001/">Inicio</a></li>
+    <li><a href="https://localhost:5001/Inventario" class="active">Inventario</a></li>
+    <li><a href="https://localhost:5001/Caso">Novedades</a></li>
+    <li><a href="https://localhost:5001/Usuario">Usuarios</a></li>
+</ul>
+
+<h1>Inventario</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table-responsive">
     <thead>
         <tr>
             <th>
@@ -40,38 +51,39 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Serial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdEstadoeqNavigation.IdEstadoeq)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdJefeNavigation.IdJefe)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdLiderNavigation.IdLider)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTipoComponenteNavigation.IdTipoComponente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTipoProcedenciaNavigation.IdTipoProcedencia)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEquipo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEquipo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEquipo">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Serial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdEstadoeqNavigation.IdEstadoeq)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdJefeNavigation.IdJefe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdLiderNavigation.IdLider)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdTipoComponenteNavigation.IdTipoComponente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdTipoProcedenciaNavigation.IdTipoProcedencia)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdEquipo">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdEquipo">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdEquipo">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
