@@ -4,12 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-
 <div id="sidebar-nav" class="sidebar">
     <div class="sidebar-scroll">
         <nav>
             <ul class="nav">
-                <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
+                <li>@Html.ActionLink("Inventario", "Index", "Inventario", new object { }, new { @class = "active" })</li>
                 <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
                 <li>@Html.ActionLink("Proveedores", "Index", "Orden")</li>
                 <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
@@ -30,15 +29,10 @@
             <table class="table table-striped ">
                 <thead>
                     <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Serial)
+                        <th>Serial
                         </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.IdCliente)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.IdEstadoeq)
-                        </th>
+                        <th>Cliente</th>
+                        <th>Estadoeq</th>
                         <!--
     <th>
         Html.DisplayNameFor(model => model.IdJefeNavigation)
@@ -47,12 +41,8 @@
         Html.DisplayNameFor(model => model.IdLiderNavigation)
     </th>
         -->
-                        <th>
-                            @Html.DisplayNameFor(model => model.IdMarca)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.IdTipoComponente)
-                        </th>
+                        <th>Marca</th>
+                        <th>Tipo de componente</th>
                         <!--
     <th>
         Html.DisplayNameFor(model => model.IdTipoProcedenciaNavigation)

@@ -4,123 +4,111 @@
     ViewData["Title"] = "Index";
 }
 
-<img src="/images/logoWhiteRN.png" /><br />
+<div id="sidebar-nav" class="sidebar">
+    <div class="sidebar-scroll">
+        <nav>
+            <ul class="nav">
+                <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
+                <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
+                <li>@Html.ActionLink("Proveedores", "Index", "Orden")</li>
+                <li>@Html.ActionLink("Usuarios", "Index", "Usuario", new object { }, new { @class = "active" })</li>
+            </ul>
 
+        </nav>
+    </div>
+</div>
 
-<ul style="text-align:center">
-    <li><a href="https://localhost:5001/">Inicio</a></li>
-    <li><a href="https://localhost:5001/Inventario">Inventario</a></li>
-    <li><a href="https://localhost:5001/Caso">Novedades</a></li>
-    <li><a href="https://localhost:5001/Usuario" class="active">Usuarios</a></li>
-</ul>
+<div class="main">
+    <div class="main-content">
 
-<h1>Usuario</h1>
+        <div class="container-fluid">
+            <h3 class="panel-title">Usuarios</h3>
 
-<p>
-    <a asp-action="Create">Crear nuevo</a>
-</p>
+            <p><a class="btnCrear" asp-action="Create">Crear usuario</a></p>
 
-
-
-<table class="table-responsive">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NumDocumento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Apellidos)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Correo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaIngresoCom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cargo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contraseña)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCiudadNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdEstadoruNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdRolNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTipdocNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumDocumento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Correo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaIngresoCom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cargo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contraseña)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCiudadNavigation.IdCiudad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdEstadoruNavigation.IdEstadoru)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdRolNavigation.IdRol)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTipdocNavigation.IdTipdoc)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdUsuario">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdUsuario">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdUsuario">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Tipo de documento</th>
+                            <th>Número de documento</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <!--<th>Fecha de nacimiento</th>-->
+                            <th>Teléfono</th>
+                            <th>Correo</th>
+                            <th>Contraseña</th>
+                            <th>Dirección</th>
+                            <th>Ciudad</th>
+                            <!--<th>Ingreso empresa</th>-->
+                            <th>Cargo</th>
+                            <th>Rol</th>
+                            <th>Estado rol</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                         {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdTipdocNavigation.IdTipdoc)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NumDocumento)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nombres)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Apellidos)
+                            </td>
+                            <!--
+    <td>
+        Html.DisplayFor(modelItem => item.FechaNacimiento)
+    </td>
+    -->
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Telefono)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Correo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Contraseña)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Direccion)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdCiudadNavigation.IdCiudad)
+                            </td>
+                            <!--
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FechaIngresoCom)
+                            </td>
+                            -->
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Cargo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdRolNavigation.IdRol)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdEstadoruNavigation.IdEstadoru)
+                            </td>
+                            <td>
+                                <ul class="menuDetalles">
+                                    <li><a class="btnEditar" asp-action="Edit" asp-route-id="@item.IdUsuario">Editar</a></li>
+                                    <li><a class="btnVer" asp-action="Details" asp-route-id="@item.IdUsuario">Detalles</a></li>
+                                    <li><a class="btnBorrar" asp-action="Delete" asp-route-id="@item.IdUsuario">Borrar</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                         }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

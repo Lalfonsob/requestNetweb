@@ -34,6 +34,7 @@ ul.menuDetalles {
 
 ul.menuDetalles li {
     display: inline-block;
+    margin: 2px 0;
 }
 
 a.btnCrear,
@@ -204,32 +205,29 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
-.inicio {
+.formsRequestNet {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    display: block;
+    height: auto;
+    margin: 20% 20% 0 20%;
+    padding: 50px 50px;
+}
+.formsRequestNet h2 {
+    color: #fff;
+    text-align:center;
+}
+.formsRequestNet img {
+    color: #fff;
+    text-align: center;
+}
+.titleForm {
     display: block;
     text-align: center;
 }
-.inicio ul {
-    display: block;
-}
-.inicio ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-.inicio ul li a {
-    background: #243672;
-    line-height: 40px;
-    display: block;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration:none;
-}
-.inicio ul li a:hover {
-    background: #252c35;
-    color: #00AAFF;
-}
 
-.inicio img {
-    margin: 50px;
+.img-circle {
+    border-radius: 50%;
 }
 
 table {
@@ -238,6 +236,13 @@ table {
 
 #sidebar-nav {
     padding-top: 72px;
+}
+
+.bg_inico {
+    background: url(/images/bgHome.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
 }
 
 .sidebar {

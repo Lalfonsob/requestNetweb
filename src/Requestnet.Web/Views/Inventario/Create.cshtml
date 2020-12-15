@@ -8,7 +8,7 @@
     <div class="sidebar-scroll">
         <nav>
             <ul class="nav">
-                <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
+                <li>@Html.ActionLink("Inventario", "Index", "Inventario", new object { }, new { @class = "active" })</li>
                 <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
                 <li>@Html.ActionLink("Proveedores", "Index", "Orden")</li>
                 <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
@@ -27,6 +27,7 @@
             <div class="mb-4">
                 <a class="btnVolver" asp-action="Index">Volver</a>
             </div>
+            <hr />
 
             <div class="row">
                 <div class="col-md-12">
@@ -34,36 +35,36 @@
                         <div class="form-row">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdEstadoeq" class="control-label"></label>
+                                <label asp-for="IdEstadoeq" class="control-label">Estado del equipo</label>
                                 <select asp-for="IdEstadoeq" class="form-control" asp-items="ViewBag.IdEstadoeq"></select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="Serial" class="control-label"></label>
+                                <label asp-for="Serial" class="control-label">Serial</label>
                                 <input asp-for="Serial" class="form-control" />
                                 <span asp-validation-for="Serial" class="text-danger"></span>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdCliente" class="control-label"></label>
+                                <label asp-for="IdCliente" class="control-label">Cliente</label>
                                 <select asp-for="IdCliente" class="form-control" asp-items="ViewBag.IdCliente"></select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdTipoComponente" class="control-label"></label>
+                                <label asp-for="IdTipoComponente" class="control-label">Tipo de componente</label>
                                 <select asp-for="IdTipoComponente" class="form-control" asp-items="ViewBag.IdTipoComponente"></select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdMarca" class="control-label"></label>
+                                <label asp-for="IdMarca" class="control-label">Marca</label>
                                 <select asp-for="IdMarca" class="form-control" asp-items="ViewBag.IdMarca"></select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdTipoProcedencia" class="control-label"></label>
+                                <label asp-for="IdTipoProcedencia" class="control-label">Tipo de procedencia</label>
                                 <select asp-for="IdTipoProcedencia" class="form-control" asp-items="ViewBag.IdTipoProcedencia"></select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label asp-for="IdJefe" class="control-label"></label>
+                                <label asp-for="IdJefe" class="control-label">Jefe</label>
                                 <select asp-for="IdJefe" class="form-control" asp-items="ViewBag.IdJefe"></select>
                             </div>
                             <div class="form-group col-md-6 ">
-                                <label asp-for="IdLider" class="control-label"></label>
+                                <label asp-for="IdLider" class="control-label">Líder</label>
                                 <select asp-for="IdLider" class="form-control" asp-items="ViewBag.IdLider"></select>
                             </div>
                             <div class="form-group">
@@ -74,11 +75,9 @@
                 </div>
             </div>
 
-
-
-        </div>
         </div>
     </div>
+</div>
 
             @section Scripts {
                 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -4,13 +4,12 @@
     ViewData["Title"] = "Details";
 }
 
-
 <div id="sidebar-nav" class="sidebar">
     <div class="sidebar-scroll">
         <nav>
             <ul class="nav">
                 <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
-                <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
+                <li>@Html.ActionLink("Novedades", "Index", "Caso", new object { }, new { @class = "active" })</li>
                 <li>@Html.ActionLink("Proveedores", "Index", "Orden")</li>
                 <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
             </ul>
@@ -24,60 +23,45 @@
 
         <div class="container-fluid">
 
-            <h3 class="panel-title">Detalle componente</h3>
+            <h3 class="panel-title">Detalle inventario</h3>
 
             <div class="mb-4">
                 <a class="btnVolver" asp-action="Index">Volver</a>
             </div>
+            <hr />
 
             <div>
 
                 <dl class="row">
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.Serial)
-                    </dt>
+                    <dt class="col-sm-2">Serial</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.Serial)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdClienteNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Cliente</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdClienteNavigation.IdCliente)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdEstadoeqNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Estado del equipo</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdEstadoeqNavigation.IdEstadoeq)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdJefeNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Jefe</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdJefeNavigation.IdJefe)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdLiderNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Lider </dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdLiderNavigation.IdLider)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdMarcaNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Marca</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdMarcaNavigation.IdMarca)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdTipoComponenteNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Tipo de componente</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdTipoComponenteNavigation.IdTipoComponente)
                     </dd>
-                    <dt class="col-sm-2">
-                        @Html.DisplayNameFor(model => model.IdTipoProcedenciaNavigation)
-                    </dt>
+                    <dt class="col-sm-2">Tipo de procedencia</dt>
                     <dd class="col-sm-10">
                         @Html.DisplayFor(model => model.IdTipoProcedenciaNavigation.IdTipoProcedencia)
                     </dd>
@@ -89,5 +73,5 @@
             </div>
 
         </div>
-        </div>
+    </div>
 </div>

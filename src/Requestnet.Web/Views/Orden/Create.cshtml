@@ -4,50 +4,70 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div id="sidebar-nav" class="sidebar">
+    <div class="sidebar-scroll">
+        <nav>
+            <ul class="nav">
+                <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
+                <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
+                <li>@Html.ActionLink("Proveedores", "Index", "Orden", new object { }, new { @class = "active" })</li>
+                <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
+            </ul>
 
-<h4>Orden</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Descripcion" class="control-label"></label>
-                <input asp-for="Descripcion" class="form-control" />
-                <span asp-validation-for="Descripcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdProveedor" class="control-label"></label>
-                <select asp-for="IdProveedor" class ="form-control" asp-items="ViewBag.IdProveedor"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdLider" class="control-label"></label>
-                <select asp-for="IdLider" class ="form-control" asp-items="ViewBag.IdLider"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdJefe" class="control-label"></label>
-                <select asp-for="IdJefe" class ="form-control" asp-items="ViewBag.IdJefe"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdTipoOrden" class="control-label"></label>
-                <select asp-for="IdTipoOrden" class ="form-control" asp-items="ViewBag.IdTipoOrden"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdEstado" class="control-label"></label>
-                <select asp-for="IdEstado" class ="form-control" asp-items="ViewBag.IdEstado"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </nav>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<div class="main">
+    <div class="main-content">
 
+        <div class="container-fluid">
+            <h3 class="panel-title">Crear Orden</h3>
+
+            <div class="mb-4">
+                <a class="btnVolver" asp-action="Index">Volver</a>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <form asp-action="Create">
+                        <div class="form-row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="Descripcion" class="control-label">Descripción</label>
+                                <input asp-for="Descripcion" class="form-control" />
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="IdProveedor" class="control-label">Proveedor</label>
+                                <select asp-for="IdProveedor" class="form-control" asp-items="ViewBag.IdProveedor"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="IdLider" class="control-label">Líder</label>
+                                <select asp-for="IdLider" class="form-control" asp-items="ViewBag.IdLider"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="IdJefe" class="control-label">Jefe</label>
+                                <select asp-for="IdJefe" class="form-control" asp-items="ViewBag.IdJefe"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="IdTipoOrden" class="control-label">Tipo de orden</label>
+                                <select asp-for="IdTipoOrden" class="form-control" asp-items="ViewBag.IdTipoOrden"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="IdEstado" class="control-label">Estado</label>
+                                <select asp-for="IdEstado" class="form-control" asp-items="ViewBag.IdEstado"></select>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Crear" class="btnCrear" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
