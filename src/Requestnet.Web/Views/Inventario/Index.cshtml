@@ -5,85 +5,105 @@
 }
 
 
-<img src="/images/logoWhiteRN.png" />
+<div id="sidebar-nav" class="sidebar">
+    <div class="sidebar-scroll">
+        <nav>
+            <ul class="nav">
+                <li>@Html.ActionLink("Inventario", "Index", "Inventario")</li>
+                <li>@Html.ActionLink("Novedades", "Index", "Caso")</li>
+                <li>@Html.ActionLink("Proveedores", "Index", "Orden")</li>
+                <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
+            </ul>
+            
+        </nav>
+    </div>
+</div>
 
+<div class="main">
+    <div class="main-content">
 
-<ul style="text-align:center">
-    <li><a href="https://localhost:5001/">Inicio</a></li>
-    <li><a href="https://localhost:5001/Inventario" class="active">Inventario</a></li>
-    <li><a href="https://localhost:5001/Caso">Novedades</a></li>
-    <li><a href="https://localhost:5001/Usuario">Usuarios</a></li>
-</ul>
+        <div class="container-fluid">
+            <h3 class="panel-title">Inventario</h3>
 
-<h1>Inventario</h1>
+            <p><a class="btnCrear" asp-action="Create">Crear nuevo</a></p>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table-responsive">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Serial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdEstadoeqNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdJefeNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdLiderNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdMarcaNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTipoComponenteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTipoProcedenciaNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Serial)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdEstadoeqNavigation.IdEstadoeq)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdJefeNavigation.IdJefe)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdLiderNavigation.IdLider)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdTipoComponenteNavigation.IdTipoComponente)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdTipoProcedenciaNavigation.IdTipoProcedencia)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.IdEquipo">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.IdEquipo">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.IdEquipo">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Serial)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdCliente)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdEstadoeq)
+                        </th>
+                        <!--
+    <th>
+        Html.DisplayNameFor(model => model.IdJefeNavigation)
+    </th>
+    <th>
+        Html.DisplayNameFor(model => model.IdLiderNavigation)
+    </th>
+        -->
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdMarca)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdTipoComponente)
+                        </th>
+                        <!--
+    <th>
+        Html.DisplayNameFor(model => model.IdTipoProcedenciaNavigation)
+    </th>
+        -->
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Serial)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdEstadoeqNavigation.IdEstadoeq)
+                        </td>
+                        <!--
+        <td>
+            Html.DisplayFor(modelItem => item.IdJefeNavigation.IdJefe)
+        </td>
+        <td>
+            Html.DisplayFor(modelItem => item.IdLiderNavigation.IdLider)
+        </td>
+    -->
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdTipoComponenteNavigation.IdTipoComponente)
+                        </td>
+                        <!--
+    <td>
+        Html.DisplayFor(modelItem => item.IdTipoProcedenciaNavigation.IdTipoProcedencia)
+    </td>
+    -->
+                        <td>
+                            <ul class="menuDetalles">
+                                <li><a class="btnEditar" asp-action="Edit" asp-route-id="@item.IdEquipo">Editar</a></li>
+                                <li><a class="btnVer" asp-action="Details" asp-route-id="@item.IdEquipo">Detalles</a></li>
+                                <li><a class="btnBorrar" asp-action="Delete" asp-route-id="@item.IdEquipo">Borrar</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

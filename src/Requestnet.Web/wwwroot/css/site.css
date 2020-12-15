@@ -25,10 +25,135 @@ a:hover {
   border-color: #1861ac;
 }
 
+ul.menuDetalles {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menuDetalles li {
+    display: inline-block;
+}
+
+a.btnCrear,
+.btnCrear {
+    background: #5cb85c;
+    border: 2px solid #5cb85c;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+a.btnCrear:hover,
+.btnCrear:hover {
+    background: transparent;
+    border: 2px solid #5cb85c;
+    color: #5cb85c;
+}
+a.btnVer {
+    background: #01aaff;
+    border: 2px solid #01aaff;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-right: 0;
+    text-transform: inherit;
+}
+a.btnVer:hover {
+    background: transparent;
+    border: 2px solid #01aaff;
+    color: #01aaff;
+}
+a.btnEditar {
+    background: #f0ad4e;
+    border: 2px solid #f0ad4e;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-right: 0;
+    text-transform: inherit;
+}
+a.btnEditar:hover {
+    background: transparent;
+    border: 2px solid #f0ad4e;
+    color: #f0ad4e;
+}
+a.btnBorrar,
+.btnBorrar {
+    background: #F9354C;
+    border: 2px solid #F9354C;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-transform: inherit;
+}
+a.btnBorrar:hover,
+.btnBorrar:hover {
+    background: transparent;
+    border: 2px solid #F9354C;
+    color: #F9354C;
+}
+.btnBorrar {
+    font-size: 14px;
+}
+a.btnVolver {
+    background: #253772;
+    border: 2px solid #253772;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-transform: inherit;
+}
+a.btnVolver:hover {
+    background: transparent;
+    border: 2px solid #222d38;
+    color: #222d38;
+}
+a.btnEditarContent {
+    background: #f0ad4e;
+    border: 2px solid #f0ad4e;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-right: 0;
+    text-transform: inherit;
+}
+a.btnEditarContent:hover {
+    background: transparent;
+    border: 2px solid #f0ad4e;
+    color: #f0ad4e;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 /* Sticky footer styles
@@ -67,6 +192,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
+    background-color: #F3F5F8;
     margin-bottom: 0px;
 }
 
@@ -101,40 +227,19 @@ body {
     background: #252c35;
     color: #00AAFF;
 }
-ul {
-    display: block;
-}
 
-ul li {
-    display: inline-block;
-}
-
-ul li a {
-    background: #243672;
-    line-height: 40px;
-    display: block;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-ul li a:hover,
-ul li a.active {
-    background: #252c35;
-    color: #00AAFF;
-}
 .inicio img {
     margin: 50px;
 }
-
 
 table {
     background: #fff;
 }
 
-#sidebar-nav, #wrapper .main {
-    padding-top: 0;
+#sidebar-nav {
+    padding-top: 72px;
 }
+
 .sidebar {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -152,12 +257,16 @@ table {
     width: 100%;
 }
 .sidebar .nav > li > a {
+    display: block;
+    line-height: 40px;
     border-left: 5px solid transparent;
     color: #ffffff;
     font-weight: 400;
     padding: 18px 30px;
 }
-.sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > a.active {
     background-color: #252c35;
     border-left-color: #00AAFF;
     color: #00AAFF;
@@ -174,6 +283,19 @@ table {
     position: relative;
     float: right;
     background-color: #f5f5fa;
+    margin-top: 80px;
+    padding: 10px 20px;
+}
+.main-content {
+    padding: 28px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    margin-bottom: 30px;
 }
 
 .nav {
@@ -183,4 +305,25 @@ table {
 }
 .navbar-default .navbar-nav > li > a {
     color: #777;
+}
+.navbar-nav > li > a img {
+    width: 42px;
+    margin-right: 5px;
+}
+
+h3.panel-title {
+    color: #212c38;
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: normal;
+    position: relative;
+}
+h3.panel-title:after {
+    content: "";
+    background: #212c38;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 100px;
+    bottom: -10px;
 }
