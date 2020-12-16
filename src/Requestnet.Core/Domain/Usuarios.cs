@@ -23,6 +23,7 @@ namespace Requestnet.Core.Domain
         public long Telefono { get; set; }
         public string Correo { get; set; }
         public int? IdCiudad { get; set; }
+        /*public string nombre_ciu { get; set; }*/
         public string Direccion { get; set; }
         public DateTime? FechaNacimiento { get; set; }
         public DateTime FechaIngresoCom { get; set; }

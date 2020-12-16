@@ -11,6 +11,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdTipoOrden { get; set; }
+        public string nom_tipo_orden { get; set; }
 
         public virtual ICollection<Orden> Orden { get; set; }
     }

@@ -12,6 +12,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdEstadoeq { get; set; }
+        public string nom_estadoeq { get; set; }
 
         public virtual ICollection<InventarioEquipos> InventarioEquipos { get; set; }
     }

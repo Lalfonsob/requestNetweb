@@ -54,11 +54,11 @@ namespace Requestnet.Web.Controllers
         public IActionResult Create()
         {
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente");
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado");
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado");
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe");
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider");
             ViewData["IdTecnico"] = new SelectList(_context.Tecnico, "IdTecnico", "IdTecnico");
-            ViewData["IdTipoCaso"] = new SelectList(_context.TipoCaso, "IdTipoCaso", "IdTipoCaso");
+            ViewData["IdTipoCaso"] = new SelectList(_context.TipoCaso, "IdTipoCaso", "nom_tipo_caso");
             return View();
         }
 
@@ -98,11 +98,11 @@ namespace Requestnet.Web.Controllers
                 return NotFound();
             }
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente", casos.IdCliente);
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", casos.IdEstado);
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado", casos.IdEstado);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", casos.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", casos.IdLider);
             ViewData["IdTecnico"] = new SelectList(_context.Tecnico, "IdTecnico", "IdTecnico", casos.IdTecnico);
-            ViewData["IdTipoCaso"] = new SelectList(_context.TipoCaso, "IdTipoCaso", "IdTipoCaso", casos.IdTipoCaso);
+            ViewData["IdTipoCaso"] = new SelectList(_context.TipoCaso, "IdTipoCaso", "nom_tipo_caso", casos.IdTipoCaso);
             return View(casos);
         }
 

@@ -11,6 +11,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdTipdoc { get; set; }
+        public string nombre_tipdoc { get; set; }
 
         public virtual ICollection<Usuarios> Usuarios { get; set; }
     }

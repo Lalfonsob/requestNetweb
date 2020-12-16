@@ -12,6 +12,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdCiudad { get; set; }
+        public string nombre_ciu { get; set; }
 
         public virtual ICollection<Usuarios> Usuarios { get; set; }
     }

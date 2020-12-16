@@ -12,6 +12,7 @@ namespace Requestnet.Core.Domain
 
         public int IdTipoComponente { get; set; }
         public int? Cantidad { get; set; }
+        public String nom_tipo_componente { get; set; }
 
         public virtual ICollection<InventarioEquipos> InventarioEquipos { get; set; }
     }

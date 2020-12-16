@@ -167,6 +167,10 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdCiudad)
                     .HasColumnName("id_ciudad")
                     .HasColumnType("int(11)");
+
+                entity.Property(e => e.nombre_ciu)
+                    .HasColumnName("nombre_ciu")
+                    .HasColumnType("string");
             });
 
             modelBuilder.Entity<EstadoEq>(entity =>
@@ -179,6 +183,10 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdEstadoeq)
                     .HasColumnName("id_estadoeq")
                     .HasColumnType("int(11)");
+
+                entity.Property(e => e.nom_estadoeq)
+                    .HasColumnName("nom_estadoeq")
+                    .HasColumnType("string");
             });
 
             modelBuilder.Entity<Estados>(entity =>
@@ -190,7 +198,12 @@ namespace Requestnet.Infrastructure.Data
 
                 entity.Property(e => e.IdEstado)
                     .HasColumnName("id_estado")
-                    .HasColumnType("int(11)");
+                    .HasColumnType("int(11)");    
+                
+                entity.Property(e => e.nom_estado)
+                    .HasColumnName("nom_estado")
+                    .HasColumnType("string");
+
             });
 
             modelBuilder.Entity<EstadosRu>(entity =>
@@ -203,6 +216,13 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdEstadoru)
                     .HasColumnName("id_estadoru")
                     .HasColumnType("int(11)");
+
+
+                entity.Property(e => e.nom_estadoru)
+                    .HasColumnName("nom_estadoru")
+                    .HasColumnType("string");
+
+
             });
 
             modelBuilder.Entity<IntegranteColaborador>(entity =>
@@ -398,6 +418,10 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdMarca)
                     .HasColumnName("id_marca")
                     .HasColumnType("int(11)");
+
+                entity.Property(e => e.nom_marca)
+                    .HasColumnName("nom_marca")
+                    .HasColumnType("string");
             });
 
             modelBuilder.Entity<Orden>(entity =>
@@ -594,6 +618,10 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdTipoCaso)
                     .HasColumnName("id_tipo_caso")
                     .HasColumnType("int(11)");
+
+                entity.Property(e => e.nom_tipo_caso)
+                    .HasColumnName("nom_tipo_caso")
+                    .HasColumnType("string");
             });
 
             modelBuilder.Entity<TipoComponente>(entity =>
@@ -607,10 +635,15 @@ namespace Requestnet.Infrastructure.Data
                     .HasColumnName("id_tipo_componente")
                     .HasColumnType("int(11)");
 
+                entity.Property(e => e.nom_tipo_componente)
+                     .HasColumnName("nom_tipo_componente")
+                     .HasColumnType("string");
+
                 entity.Property(e => e.Cantidad)
                     .HasColumnName("cantidad")
                     .HasColumnType("int(11)")
                     .HasDefaultValueSql("'NULL'");
+
             });
 
             modelBuilder.Entity<TipoDoc>(entity =>
@@ -623,6 +656,12 @@ namespace Requestnet.Infrastructure.Data
                 entity.Property(e => e.IdTipdoc)
                     .HasColumnName("id_tipdoc")
                     .HasColumnType("int(11)");
+
+                entity.Property(e => e.nombre_tipdoc)
+                    .HasColumnName("nombre_tipdoc")
+                    .HasColumnType("string");
+
+
             });
 
             modelBuilder.Entity<TipoOrden>(entity =>
@@ -634,7 +673,14 @@ namespace Requestnet.Infrastructure.Data
 
                 entity.Property(e => e.IdTipoOrden)
                     .HasColumnName("id_tipo_orden")
-                    .HasColumnType("int(11)");
+                    .HasColumnType("int(11)");      
+                
+
+                entity.Property(e => e.nom_tipo_orden)
+                    .HasColumnName("nom_tipo_orden")
+                    .HasColumnType("string");
+
+
             });
 
             modelBuilder.Entity<TipoProcedencia>(entity =>
@@ -670,7 +716,11 @@ namespace Requestnet.Infrastructure.Data
                 entity.ToTable("usuarios");
 
                 entity.HasIndex(e => e.IdCiudad)
-                    .HasName("id_ciudad");
+                    .HasName("id_ciudad");  
+                
+/*                entity.HasIndex(e => e.nombre_ciu)
+                    .HasName("nombre_ciu");
+*/
 
                 entity.HasIndex(e => e.IdEstadoru)
                     .HasName("id_estadoru");

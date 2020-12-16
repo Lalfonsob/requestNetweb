@@ -11,6 +11,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdTipoCaso { get; set; }
+        public string nom_tipo_caso { get; set; }
 
         public virtual ICollection<Casos> Casos { get; set; }
     }

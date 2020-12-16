@@ -52,11 +52,11 @@ namespace Requestnet.Web.Controllers
         // GET: Orden/Create
         public IActionResult Create()
         {
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado");
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado");
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe");
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider");
             ViewData["IdProveedor"] = new SelectList(_context.Proveedores, "IdProveedor", "IdProveedor");
-            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "IdTipoOrden");
+            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "nom_tipo_orden");
             return View();
         }
 
@@ -73,11 +73,11 @@ namespace Requestnet.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", orden.IdEstado);
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado", orden.IdEstado);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", orden.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", orden.IdLider);
             ViewData["IdProveedor"] = new SelectList(_context.Proveedores, "IdProveedor", "IdProveedor", orden.IdProveedor);
-            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "IdTipoOrden", orden.IdTipoOrden);
+            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "nom_tipo_orden", orden.IdTipoOrden);
             return View(orden);
         }
 
@@ -94,11 +94,11 @@ namespace Requestnet.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", orden.IdEstado);
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado", orden.IdEstado);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", orden.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", orden.IdLider);
             ViewData["IdProveedor"] = new SelectList(_context.Proveedores, "IdProveedor", "IdProveedor", orden.IdProveedor);
-            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "IdTipoOrden", orden.IdTipoOrden);
+            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "nom_tipo_orden", orden.IdTipoOrden);
             return View(orden);
         }
 
@@ -134,11 +134,11 @@ namespace Requestnet.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", orden.IdEstado);
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "nom_estado", orden.IdEstado);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", orden.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", orden.IdLider);
             ViewData["IdProveedor"] = new SelectList(_context.Proveedores, "IdProveedor", "IdProveedor", orden.IdProveedor);
-            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "IdTipoOrden", orden.IdTipoOrden);
+            ViewData["IdTipoOrden"] = new SelectList(_context.TipoOrden, "IdTipoOrden", "nom_tipo_orden", orden.IdTipoOrden);
             return View(orden);
         }
 

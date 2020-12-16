@@ -51,10 +51,10 @@ namespace Requestnet.Web.Controllers
         // GET: Usuario/Create
         public IActionResult Create()
         {
-            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "IdCiudad");
-            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "IdEstadoru");
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "IdRol");
-            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "IdTipdoc");
+            ViewData["nombre_ciu"] = new SelectList(_context.Ciudades, "IdCiudad", "nombre_ciu");
+            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "nom_estadoru");
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "NombreRol");
+            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "nombre_tipdoc");
             return View();
         }
 
@@ -63,7 +63,7 @@ namespace Requestnet.Web.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUsuario,IdTipdoc,NumDocumento,Nombres,Apellidos,Telefono,Correo,IdCiudad,Direccion,FechaNacimiento,FechaIngresoCom,Cargo,IdRol,Contraseña,IdEstadoru")] Usuarios usuarios)
+        public async Task<IActionResult> Create([Bind("IdUsuario,nombre_tipdoc,NumDocumento,Nombres,Apellidos,Telefono,Correo,IdCiudad,Direccion,FechaNacimiento,FechaIngresoCom,Cargo,IdRol,Contraseña,IdEstadoru")] Usuarios usuarios)
         {
             if (ModelState.IsValid)
             {
@@ -71,10 +71,10 @@ namespace Requestnet.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "IdCiudad", usuarios.IdCiudad);
-            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "IdEstadoru", usuarios.IdEstadoru);
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "IdRol", usuarios.IdRol);
-            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "IdTipdoc", usuarios.IdTipdoc);
+            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "nombre_ciu", usuarios.IdCiudad);
+            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "nom_estadoru", usuarios.IdEstadoru);
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "NombreRol", usuarios.IdRol);
+            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "nombre_tipdoc", usuarios.IdTipdoc);
             return View(usuarios);
         }
 
@@ -91,10 +91,10 @@ namespace Requestnet.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "IdCiudad", usuarios.IdCiudad);
-            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "IdEstadoru", usuarios.IdEstadoru);
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "IdRol", usuarios.IdRol);
-            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "IdTipdoc", usuarios.IdTipdoc);
+            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "nombre_ciu", usuarios.IdCiudad);
+            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "nom_estadoru", usuarios.IdEstadoru);
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "NombreRol", usuarios.IdRol);
+            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "nombre_tipdoc", usuarios.IdTipdoc);
             return View(usuarios);
         }
 
@@ -130,10 +130,10 @@ namespace Requestnet.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "IdCiudad", usuarios.IdCiudad);
-            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "IdEstadoru", usuarios.IdEstadoru);
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "IdRol", usuarios.IdRol);
-            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "IdTipdoc", usuarios.IdTipdoc);
+            ViewData["IdCiudad"] = new SelectList(_context.Ciudades, "IdCiudad", "nombre_ciu", usuarios.IdCiudad);
+            ViewData["IdEstadoru"] = new SelectList(_context.EstadosRu, "IdEstadoru", "nom_estadoru", usuarios.IdEstadoru);
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "NombreRol", usuarios.IdRol);
+            ViewData["IdTipdoc"] = new SelectList(_context.TipoDoc, "IdTipdoc", "nombre_tipdoc", usuarios.IdTipdoc);
             return View(usuarios);
         }
 

@@ -55,11 +55,11 @@ namespace Requestnet.Web.Controllers
         public IActionResult Create()
         {
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente");
-            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "IdEstadoeq");
+            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "nom_estadoeq");
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe");
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider");
-            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "IdMarca");
-            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "IdTipoComponente");
+            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "nom_marca");
+            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "nom_tipo_componente");
             ViewData["IdTipoProcedencia"] = new SelectList(_context.TipoProcedencia, "IdTipoProcedencia", "IdTipoProcedencia");
             return View();
         }
@@ -78,11 +78,11 @@ namespace Requestnet.Web.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente", inventarioEquipos.IdCliente);
-            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "IdEstadoeq", inventarioEquipos.IdEstadoeq);
+            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "nom_estadoeq", inventarioEquipos.IdEstadoeq);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", inventarioEquipos.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", inventarioEquipos.IdLider);
-            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "IdMarca", inventarioEquipos.IdMarca);
-            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "IdTipoComponente", inventarioEquipos.IdTipoComponente);
+            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "nom_marca", inventarioEquipos.IdMarca);
+            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "nom_tipo_componente", inventarioEquipos.IdTipoComponente);
             ViewData["IdTipoProcedencia"] = new SelectList(_context.TipoProcedencia, "IdTipoProcedencia", "IdTipoProcedencia", inventarioEquipos.IdTipoProcedencia);
             return View(inventarioEquipos);
         }
@@ -101,11 +101,11 @@ namespace Requestnet.Web.Controllers
                 return NotFound();
             }
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente", inventarioEquipos.IdCliente);
-            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "IdEstadoeq", inventarioEquipos.IdEstadoeq);
+            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "nom_estadoeq", inventarioEquipos.IdEstadoeq);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", inventarioEquipos.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", inventarioEquipos.IdLider);
-            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "IdMarca", inventarioEquipos.IdMarca);
-            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "IdTipoComponente", inventarioEquipos.IdTipoComponente);
+            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "nom_marca", inventarioEquipos.IdMarca);
+            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "nom_tipo_componente", inventarioEquipos.IdTipoComponente);
             ViewData["IdTipoProcedencia"] = new SelectList(_context.TipoProcedencia, "IdTipoProcedencia", "IdTipoProcedencia", inventarioEquipos.IdTipoProcedencia);
             return View(inventarioEquipos);
         }
@@ -143,11 +143,11 @@ namespace Requestnet.Web.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdCliente"] = new SelectList(_context.IntegranteColaborador, "IdCliente", "IdCliente", inventarioEquipos.IdCliente);
-            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "IdEstadoeq", inventarioEquipos.IdEstadoeq);
+            ViewData["IdEstadoeq"] = new SelectList(_context.EstadoEq, "IdEstadoeq", "nom_estadoeq", inventarioEquipos.IdEstadoeq);
             ViewData["IdJefe"] = new SelectList(_context.Jefeinfraestructura, "IdJefe", "IdJefe", inventarioEquipos.IdJefe);
             ViewData["IdLider"] = new SelectList(_context.Liderinventario, "IdLider", "IdLider", inventarioEquipos.IdLider);
-            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "IdMarca", inventarioEquipos.IdMarca);
-            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "IdTipoComponente", inventarioEquipos.IdTipoComponente);
+            ViewData["IdMarca"] = new SelectList(_context.Marca, "IdMarca", "nom_marca", inventarioEquipos.IdMarca);
+            ViewData["IdTipoComponente"] = new SelectList(_context.TipoComponente, "IdTipoComponente", "nom_tipo_componente", inventarioEquipos.IdTipoComponente);
             ViewData["IdTipoProcedencia"] = new SelectList(_context.TipoProcedencia, "IdTipoProcedencia", "IdTipoProcedencia", inventarioEquipos.IdTipoProcedencia);
             return View(inventarioEquipos);
         }

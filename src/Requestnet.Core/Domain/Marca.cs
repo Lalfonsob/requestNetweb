@@ -11,6 +11,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdMarca { get; set; }
+        public string nom_marca { get; set; }
 
         public virtual ICollection<InventarioEquipos> InventarioEquipos { get; set; }
     }

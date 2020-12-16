@@ -13,6 +13,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdEstadoru { get; set; }
+        public string nom_estadoru { get; set; }
 
         public virtual ICollection<Roles> Roles { get; set; }
         public virtual ICollection<Usuarios> Usuarios { get; set; }

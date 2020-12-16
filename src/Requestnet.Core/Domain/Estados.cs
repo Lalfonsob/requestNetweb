@@ -13,6 +13,7 @@ namespace Requestnet.Core.Domain
         }
 
         public int IdEstado { get; set; }
+        public string nom_estado { get; set; }
 
         public virtual ICollection<Casos> Casos { get; set; }
         public virtual ICollection<Orden> Orden { get; set; }

@@ -34,3 +34,15 @@ C:/Users/Mi Amorsh/requestNetweb/src/Requestnet.Core/obj/Debug/netcoreapp3.1/Req
 /Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/obj/Debug/netcoreapp3.1/Requestnet.Core.dll
 /Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/obj/Debug/netcoreapp3.1/Requestnet.Core.pdb
 /Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/obj/Debug/netcoreapp3.1/Requestnet.Core.genruntimeconfig.cache
+D:\request\requestNetweb\src\Requestnet.Core\bin\Debug\netcoreapp3.1\Requestnet.Core.deps.json
+D:\request\requestNetweb\src\Requestnet.Core\bin\Debug\netcoreapp3.1\Requestnet.Core.runtimeconfig.json
+D:\request\requestNetweb\src\Requestnet.Core\bin\Debug\netcoreapp3.1\Requestnet.Core.runtimeconfig.dev.json
+D:\request\requestNetweb\src\Requestnet.Core\bin\Debug\netcoreapp3.1\Requestnet.Core.dll
+D:\request\requestNetweb\src\Requestnet.Core\bin\Debug\netcoreapp3.1\Requestnet.Core.pdb
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.csprojAssemblyReference.cache
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.AssemblyInfoInputs.cache
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.AssemblyInfo.cs
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.csproj.CoreCompileInputs.cache
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.dll
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.pdb
+D:\request\requestNetweb\src\Requestnet.Core\obj\Debug\netcoreapp3.1\Requestnet.Core.genruntimeconfig.cache

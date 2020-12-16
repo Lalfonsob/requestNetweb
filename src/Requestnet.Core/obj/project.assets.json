@@ -6170,33 +6170,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/miguelbaron/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\danil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/Requestnet.Core.csproj",
+      "projectUniqueName": "D:\\request\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj",
       "projectName": "Requestnet.Core",
-      "projectPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/Requestnet.Core.csproj",
-      "packagesPath": "/Users/miguelbaron/.nuget/packages/",
-      "outputPath": "/Users/miguelbaron/VisualStudio_NET/requestNetweb/src/Requestnet.Core/obj/",
+      "projectPath": "D:\\request\\requestNetweb\\src\\Requestnet.Core\\Requestnet.Core.csproj",
+      "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+      "outputPath": "D:\\request\\requestNetweb\\src\\Requestnet.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/Users/miguelbaron/.config/NuGet/NuGet.Config"
+        "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6208,7 +6205,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -6236,7 +6232,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
